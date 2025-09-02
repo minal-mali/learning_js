@@ -26,7 +26,43 @@
         //const pi= 56.9; redeclare not allow
         //pi=3.45;
         document.write(pi);
+        document.write("<br>");
 
+    </script>
+
+    <script>
+        //global scope
+        var x=100;
+        let y=101;
+        const z = 102;
+
+        function scopeExample(){
+          var x=1; //function scope
+          let y=2; //block scope
+          const z =3; //block scope 
+          
+          if(true) //inside the funtion
+          {
+            var x=10; //x reassign value
+            let y=20; //block scope
+            const z = 30; //block scope
+            document.write(x); //10
+            document.write(y); //20
+            document.write(z); //30
+            document.write("<br>");
+
+          }
+          // outside function
+            document.write(x); //10
+            document.write(y); //2
+            document.write(z); //3
+            document.write("<br>");
+        }
+            document.write(x); //10
+            document.write(y); //2
+            document.write(z); //3
+            document.write("<br>");
+        scopeExample();
     </script>
 </body>
 </html>
