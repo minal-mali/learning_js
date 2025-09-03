@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = ["minal","sanika","nayna","guari","diksha"];
+        document.write(a + "<br>");
+        a[2] = "taniya";
+        document.write(a + "<br>");
+        delete a[3];
+        document.write(a + "<br>");
+    </script>
+    <script>
+        var a = ["minal","sanika","nayana","ritika","sonpari"];
+        document.write(a + "<br>");
+        a.sort();
+        document.write(a + "<br>");
+        a.reverse();
+         document.write(a + "<br>");
+
+
+    </script>
+
+    <!-- push and pop -->
+    <script>
+         var a = ["minal","sanika","nayana","ritika","sonpari"];
+        document.write(a + "<br>");
+        a.pop();
+        a.pop();
+        document.write(a + "<br>");
+        a.push("ritu");
+         document.write(a + "<br>");
+        </script>
+
+     <!-- shift and unshift -->
+     <script>
+         var a = ["minal","sanika","nayana","ritika","sonpari"];
+        document.write(a + "<br>");
+        a.shift();
+        a.shift();
+        document.write(a + "<br>");
+        a.unshift("ritu");
+        a.unshift("kirti");
+        a.unshift("suhani");
+         document.write(a + "<br>");
+        </script>
+
+        <script>
+            var a=["Minal","ritu","sanika","ritika"]
+            var b=["gauri","diksha","shruti"]
+            var z = ["kirti","janhvi", "saloni"]
+            var c = a.concat(b);
+            var e = a.concat(b,z);
+             document.write(c + "<br>");
+             document.write(z + "<br>");
+             var d= c.join("/");
+             document.write(d + "<br>")
+        </script>
+</body>
+</html>
